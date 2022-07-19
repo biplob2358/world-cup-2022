@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+ /* For Header */
+.header{
+  height: 493px;
+  width: 80%;
+  margin-left: 5%;
+  margin: 20px auto;
+  background-color: black;
+  display: flex;
+  border-radius: 30px;
+}
+
+.header-title{
+    width: 50%;
+    padding: 5%;
+    color: aliceblue;
+}
+.header-title>h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+.header-title>p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.watch-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 25px;
+    gap: 10px;
+    color: white;
+   background-image: linear-gradient(red, rgb(223, 58, 28));
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    cursor: pointer;
+}
+.watch-btn:hover{
+    box-shadow: 5px 5px 5px gray;
+}
+
+.header-img{
+    padding-top: 14%;
+    padding-left: 5%;
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .header{
+        display: block;
+        text-align: center;
+        height: auto;
+
+    }
+    .header-title{
+        margin: auto;
+    }
+@media only screen and (min-width: 780px) {
+    .header{
+        height: auto;
+
+    }
+    .header-title{
+        margin: auto;
+    }
+    
+}
+}
+
+
+.blogs-container{
+    display: flex;
+    margin: 20px auto;
+    gap: 20px;
+
+}
+.side-bar{
+    height: 100px;
+    width: 18%;
+    margin-left: 5%;
+    background-color: red;
+}
+.blogs{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    
+    
+}
+.blog{
+    box-shadow: 2px 2px 5px rgb(150, 15, 15);
+    border-radius: 5%;
+    padding-bottom: 20px;
+    
+
+}
+.trans{
+    border: 1px solid gray;
+    color: black;
+    font-weight: 500;
+    display: inline;
+    padding: 2px 20px;
+    text-align: center;
+    
+}
+.blog-containt{
+    padding-left: 5%;
+}
+.time{
+    padding-left: 0%;
+    display: flex;
+    margin-left: 5%;
+    gap: 40px;
+    
+}
+
+   
+
