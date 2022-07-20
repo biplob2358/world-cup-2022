@@ -6,10 +6,15 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+.container{
+    
+    margin-left: 5%;
+    margin: 20px auto;
+}
  /* For Header */
 .header{
   height: 493px;
-  width: 80%;
+  width: 90%;
   margin-left: 5%;
   margin: 20px auto;
   background-color: black;
@@ -57,21 +62,22 @@ body{
 }
 
 .header-img{
-    padding-top: 14%;
+    padding-top: 12.5%;
     padding-left: 5%;
     width: 100%;
 }
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .header{
         display: block;
         text-align: center;
         height: auto;
-
     }
     .header-title{
         margin: auto;
     }
-@media only screen and (min-width: 780px) {
+  
+} */
+/* @media only screen and (min-width: 780px) {
     .header{
         height: auto;
 
@@ -80,21 +86,43 @@ body{
         margin: auto;
     }
     
-}
-}
+} */
 
-
+/* Blog section style */
 .blogs-container{
     display: flex;
     margin: 20px auto;
     gap: 20px;
 
 }
-.side-bar{
-    height: 100px;
+.side-bars{
+    height: 300px;
     width: 18%;
     margin-left: 5%;
+    background-color:black;
+    border-radius: 5%;
+}
+.side-bar{
+    
+    text-align: center;
+    border: 1px solid white;
+    margin: 15px 15px 25px 15px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    
+    
+}
+.side-bar a{
+    text-decoration: none;
+    color: black;
+}
+.side-bar:hover{
+    box-shadow: 2px 2px 5px rgb(250, 246, 246);
+}
+.blog-bar{
     background-color: red;
+    
 }
 .blogs{
     width: 60%;
@@ -105,11 +133,15 @@ body{
     
 }
 .blog{
-    box-shadow: 2px 2px 5px rgb(150, 15, 15);
+    box-shadow: 2px 2px 5px rgb(43, 41, 41);
     border-radius: 5%;
     padding-bottom: 20px;
+    margin-bottom: 10px;
     
 
+}
+.blog:hover{
+    box-shadow: 5px 10px 5px rgb(99, 88, 88);
 }
 .trans{
     border: 1px solid gray;
@@ -130,6 +162,156 @@ body{
     gap: 40px;
     
 }
+.hide-btn{
+    display: none;
+}
+
+/* @media only screen and (max-width: 600px){
+    .blogs-container{
+        display: block;
+        
+        
+    }
+    .side-bars{
+        display: block;
+        height: auto;
+        margin-top: 20px;   
+        width: auto;
+        margin-bottom: 20px;
+        background-color: #FFFFFF;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 20%;
+        
+    }
+} */
+/* footer style */
+.footer{
+    padding-top: 20px;
+    margin-left: 5%;
+    margin: 20px auto;
+    color: #FFFFFF;
+    margin-bottom: 0%;
+    background-color: black;
+    text-align: center;
+}
+hr{
+    width: 70%;
+    margin-left: 18%;
+    color: whitesmoke;
+}
+.footer-lnks{
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    justify-content: space-around;
+}
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+     width: 100%;
+     gap: 30px;
+     
+     
+}
+.icon a{
+    color: white;
+}
+
+
+/* Media query for responsive */
+@media only screen and (max-width: 600px){
+    .header{
+        display: block;
+        text-align: center;
+        height: auto;
+       
+    }
+    
+    .clip{
+    white-space: nowrap; 
+    width: 300px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    border: 1px solid #000000;
+    }
+    .header-title{
+        margin: auto;
+        
+    }
+
+    .blogs-container{
+        display: block;
+        
+        
+    }
+    .side-bars{
+        display: block;
+        height: auto;
+        margin-top: 20px;   
+        width: auto;
+        margin-bottom: 20px;
+        background-color: #FFFFFF;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 20%;
+        
+    }
+    .footer-lnks{
+        display: block;
+    }
+}
+ @media only screen and (min-width: 700px )  and (max-width: 980px) {
+    .header{
+      margin-left: 6%;
+      height: fit-content;
+       
+    }
+    .header-img{
+       margin-top: 22%;
+    }
+    .blogs-container{
+        display: block;
+        margin-left: 6%;
+       
+    }
+    .side-bars{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        height: auto;
+        margin-top: 20px; 
+        margin-right: 15%;
+        width: auto;
+        margin-bottom: 20px;
+        background-color: #FFFFFF;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 8%;
+        
+    }
+    .hidden{
+        display: none;
+    }
+    .hide-btn{
+        display: block;
+        margin-left: 45%;
+    }
+    .footer-lnks{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        text-align: center;
+    }
+
+    
+}
+
 
    
 
