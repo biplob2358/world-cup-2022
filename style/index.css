@@ -241,6 +241,9 @@ hr{
     .header-img{
        margin-top: 22%;
     }
+    .watch-btn{
+        font-size: 16px;
+    }
     .blogs-container{
         display: block;
         margin-left: 6%;
